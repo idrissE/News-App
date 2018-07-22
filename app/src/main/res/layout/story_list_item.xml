@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemContainerStyle">
+
+    <LinearLayout style="@style/DetailsContainer">
+
+        <LinearLayout style="@style/TitlesContainerStyle">
+
+            <TextView
+                android:id="@+id/story_section"
+                style="@style/SectionNameStyle"
+                tools:text="Section 1" />
+
+            <TextView
+                android:id="@+id/story_title"
+                style="@style/TitleStyle"
+                app:fontFamily="sans-serif-medium"
+                tools:text="An Example Title that expands right here with tools:text" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/story_thumbnail"
+            style="@style/ThumbnailStyle" />
+
+    </LinearLayout>
+
+    <RelativeLayout style="@style/MetaContainer">
+
+        <TextView
+            android:id="@+id/story_date"
+            style="@style/WrapperContainerStyle"
+            tools:text="2018-06-10" />
+
+        <TextView
+            android:id="@+id/story_contributors"
+            style="@style/AuthorsStyle"
+            tools:text="Contributor Name" />
+    </RelativeLayout>
+
+</LinearLayout>

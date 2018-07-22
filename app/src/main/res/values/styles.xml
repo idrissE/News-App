@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapperContainerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="WrapperContainerStyle">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="ErrorMessageStyle" parent="ProgressBarStyle">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--List item styles -->
+    <style name="FullWrapContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ItemContainerStyle" parent="FullWrapContainer">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/base_dim</item>
+    </style>
+
+    <style name="DetailsContainer" parent="FullWrapContainer">
+        <item name="android:orientation">horizontal</item>"
+    </style>
+
+    <style name="MetaContainer" parent="FullWrapContainer">
+        <item name="android:layout_marginTop">@dimen/half_dim</item>
+    </style>
+
+    <style name="TitlesContainerStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/half_dim</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SectionNameStyle" parent="FullWrapContainer">
+        <item name="android:layout_marginBottom">@dimen/half_dim</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ThumbnailStyle">
+        <item name="android:layout_width">@dimen/image_size</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="AuthorsStyle" parent="WrapperContainerStyle">
+        <item name="android:layout_alignParentRight">true</item>
+        <!--Used so that date and authors names don't overlap-->
+        <item name="android:layout_toRightOf">@id/story_date</item>
+        <item name="android:gravity">end</item>
+    </style>
+</resources>
